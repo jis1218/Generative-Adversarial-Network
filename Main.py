@@ -82,7 +82,7 @@ if __name__ == '__main__':
                 noise = get_noise(sample_size, n_noise)
                 samples = sess.run(G, feed_dict={Z: noise})
                 
-                fig, ax = plt.subplots(1, sample_size, figsize=(sample_size, 1))
+                fig, ax = plt.subplots(1, sample_size, figsize=(sample_size, 1)) #subplots 한 화면에 여러 그래프를 나눠서 그려주는 기능
                 
                 for i in range(sample_size):
                     ax[i].set_axis_off()
